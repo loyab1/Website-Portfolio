@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Logic | CSIT 212 Final Project</title>
+    <meta name="description" content="Explanation of boolean logic gates: AND, OR, XOR, NAND.">
+                <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">CSIT 212 Final Project</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Binary Calculator</a></li>
+            <li><a href="boolean-logic.html" class="active">Boolean Logic</a></li>
+            <li><a href="algorithm-visualizer.html">Algorithms</a></li>
+            <li><a href="circuit-builder.html">Circuit Builder</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Languages ▼</a>
+                <div class="dropdown-content">
+                    <a href="html-summary.html">HTML</a>
+                    <a href="css-summary.html">CSS</a>
+                    <a href="js-summary.html">JavaScript</a>
+                    <a href="python-summary.html">Python</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="header">
+            <h1>Boolean Logic</h1>
+            <p>Understanding fundamental logic gates: AND, OR, XOR, and NAND</p>
+        </header>
+
+        <section class="instructions-section" style="margin-bottom: 2.5rem;">
+            <div class="instructions-grid">
+                
+                <div class="instruction-block card">
+                    <h3>AND Gate</h3>
+                    <p>The AND gate outputs true (1) only if <strong>both</strong> inputs are true.</p>
+                    <table>
+                        <thead>
+                            <tr><th>A</th><th>B</th><th>Output</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0</td><td>0</td></tr>
+                            <tr><td>0</td><td>1</td><td>0</td></tr>
+                            <tr><td>1</td><td>0</td><td>0</td></tr>
+                            <tr><td>1</td><td>1</td><td>1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="instruction-block card">
+                    <h3>OR Gate</h3>
+                    <p>The OR gate outputs true (1) if <strong>at least one</strong> input is true.</p>
+                    <table>
+                        <thead>
+                            <tr><th>A</th><th>B</th><th>Output</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0</td><td>0</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td></tr>
+                            <tr><td>1</td><td>1</td><td>1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="instruction-block card">
+                    <h3>XOR Gate (Exclusive OR)</h3>
+                    <p>The XOR gate outputs true (1) if the inputs are <strong>different</strong>.</p>
+                    <table>
+                        <thead>
+                            <tr><th>A</th><th>B</th><th>Output</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0</td><td>0</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="instruction-block card">
+                    <h3>NAND Gate</h3>
+                    <p>The NAND gate is the inverse of AND. It outputs false (0) only if <strong>both</strong> inputs are true.</p>
+                    <table>
+                        <thead>
+                            <tr><th>A</th><th>B</th><th>Output</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0</td><td>1</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="interactive-logic card" style="text-align: center;">
+            <h2>Logic Gate Simulator</h2>
+            <div class="simulator-controls" style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-top: 1.5rem;">
+                
+                <div class="input-section">
+                    <label>Input A</label>
+                    <button id="btnInputA" class="toggle-btn" data-state="0">0</button>
+                </div>
+
+                <div class="gate-section">
+                    <label for="gateSelect">Gate</label>
+                    <select id="gateSelect" class="gate-select">
+                        <option value="AND">AND</option>
+                        <option value="OR">OR</option>
+                        <option value="XOR">XOR</option>
+                        <option value="NAND">NAND</option>
+                    </select>
+                </div>
+
+                <div class="input-section">
+                    <label>Input B</label>
+                    <button id="btnInputB" class="toggle-btn" data-state="0">0</button>
+                </div>
+
+                <div class="output-section">
+                    <label>Output</label>
+                    <div id="lightBulb" class="light-bulb off"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
