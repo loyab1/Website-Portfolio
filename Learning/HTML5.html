@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta charset="utg-8">
+<html>
+<head>
+<title>Education Website</title>
+</head>
+<body>
+<h1> Learning HTML </h1>
+<p> This web page will be used to educate a user on everything I have learned during the creation of this website </p>
+<h2> HTML5 </h2>
+<p> HTML5 is the latest version of HTML. It is used to create web pages and applications. It is the starting point and most fundamental language to create a website.</p>
+
+<h3>Syntax</h3>
+<p>&lt!DOCTYPE html &gt This tag defines the document is html. All HTML Documents must start with this declaration</p>
+<p>&lt meta charset=&gt - This tag sets the meta character</p>
+<p>&lthtml&gt - this tag is the root element of an html page</p>
+<p>&lthead&gt - this tag contains meta information about the page like title scripts and style sheets
+    elements that can be used within &lthead&gt are:
+    <ul>
+    <li>&lttitle&gt</li>
+    <li>&ltbase&gt</li>
+    <li>&ltlink&gt - relationship between current document and external resource</li>
+    <li>&ltstyle&gt - used to define style information for a single page</li>
+    <li>&ltmeta&gt - specify character set, page description,keywords,author, and viewport settings</li>
+    <li>&ltscript&gt - define client side javascripts</li>
+    <li>&lttemplate&gt</li>
+    </ul>
+</p>
+<p>&lttitle&gt - This tag specifies the title for the page, content is shown in the title bar</p>
+<p>&ltbody&gt - This tag defines the document body. A container for all visible contents. What the browser displays </p>
+<p>&lth1&gt - This tag creates a large heading.</p>
+<ul>
+    <li> Headings are numbered h1-h6</li>
+    <li> Use only one &lth1&gt per page, h2 section titles, h3 sub sections</li>
+    <li> Browsers will add white space before and after a heading </li>
+    <li> Heading size can be specified with css inline style attribute: style="font-size:60px;"</li>
+</ul>
+<p>&ltp&gt - This tag creates a paragraph</p>
+<ul>
+    <li> A paragraph starts a new line, but the results of how it is displayed depends on the screen size</li>
+    <li> To separate content or create a thematic break use the &lthr&gt tag</li>
+    <p>Example</p>
+    <hr>
+    <li>the &ltpre&gt element is how you displayed fixed width text
+</ul>
+<P>&lta&gt - This tag creates a link. Attributes like href need to be used</p>
+    <ul>
+        <p> HTML Link Target Attributes target=""</p>
+        <li>_self - Opens the document in the same tab it was clicked on </li>
+        <li>_blank - opens the document in a new window/tab</li>
+        <li>_parent - opens the document in the parent frame</li>
+        <li>_top - opens the document in the full body of the window.</li>
+    </ul>
+<p> an Image can be used as a link, just include it within the &lta&gt tag
+<p>&ltimg&gt - this Tag is is how images are defined. Attributes like src, alt, width, height are used </p>
+<p>&ltbr&gt - This tag is used for a line break. Since it is an empty element it does not rquire a closing tag </p>
+<p>Comments can be written by writting text in between the follow syntax &lt!-- Text here --&gt</p>
+<h3>Attributes</h3>
+<h5>&ltimg src="" alt="" width="" height=""&gt</h5>
+<ul>
+    <li>src - Absolute URL of an image such as a link or Relative URL such as the path to the image in the directory</li> 
+    <li>width - used to specify width of image</li> 
+    <li>height - used to specify height of width</li>
+    <li>alt - Text used to describe an image if it cannot be displayed </li>
+</ul>
+<h5>&ltp&gt</h5>
+<ul>
+    <li>style - used to add styles to an element such as color font size and others</li>
+    <li> <p title="This attribute can be used for many tags"> title - value displayed when mouse govering over the defined tag </li>
+</ul>
+
+<h5>styling attributes</h5>
+<dl>
+    <dt>background-color:</dt>
+    <dd>-defines the background color for an HTML element</dd>
+    <dt style="color:red;">color:</dt>
+    <dd>- defines the text color</dd>
+    <dd>- HTML supports 140 standard color names or by using RGB,HEX,HSL,RGBA,HSLA values</dd>
+    <dt style="font-family:courier;">font-family:</dt>
+    <dd>- define the text font</dd>
+    <dt style="font-size:20px;">font-size:</dt>
+    <dd>- define the font size</dd>
+    <dt>text-align</dt>
+    <dd>- define the alignment of the text</dd>
+</dl>
+
+<h5>Text Formatting</h5>
+<ul>
+    <li>&ltblockquote&gt</li> <p> This is an example <blockquote> This is a block quote test, a block qoute defines a section that is qouted from another source </blockquote></p>
+    <li>&ltq&gt</li><p> A short quote <q> is used to insert quotation marks around the q tag.</q></p>
+    <li>&ltabbr&gt</li><p> The abbrevation tag defines an abbreviation <abbr title="Yo Mama So Fat">YMSF</abbr></p>
+    <li>&ltaddress&gt - defines the contact information for the author/owner</li>
+    <address>
+    Written by Lylite<br>
+    Visit us at: Example.com<br>
+    </address>
+    <li>&ltcite&gt - used to cite a persons work </li>
+    <li>&ltbdo&gt - used to overwrite current text direction</li>
+</ul>
+
+
+<h5>HTML Tables</h5>
+<p> A table can be defined using the &lttable&gt tag.<br></p>
+<ul>
+    <li>&ltth&gt defines a table header</li>
+    <li>&lttd&gt defines table data nested within a &lttr&gt tag</li>
+</ul>
+
+<h5>Block & Inline Elements</h5>
+<p> A block level element always starts on a new line and takes up the full width available.</p>
+<dl>
+    <dt>&ltp&gt</dt>
+    <dt>&ltdiv&gt</dt>
+    <dd>An element used as a container for other elements
+</dl>
+
+<h5> Div Element</h5>
+<p>A div element is used as a container for other HTML Elements. It takes up the full width available and has a line break before and after.</p>
+<p>There are no required attributes but &ltstyle&gt, &ltclass&gt, and &ltid&gt are among the common.</p>
+<div style = "background-color:red;"> <p> Example Div - here you can see it take up the full width.</p></div>
+<dl>
+    <dt>Attributes</dt>
+    <dd>Class - often used to point to a class name in a style sheet and can be used on any HTML Element.</dl>
+    <dd>id - used to point to a specific style declaration & specify a unique id for an HTML element
+
+<h5> Interactive Elements</h5>
+<dl>
+    <dt>&ltbutton&gt</dt>
+    <dd> A button tag creates a clickable button, an action must be added through java script. Buttons are often used inside forms. 
+    A button should always specify its type attribute. <button>click here</button> </dd>
+</dl>
+
+<h5> HTML Forms</h5>
+<p> An HTML form is used to collect user input. Most often sent to a server for processing. A form is created using the &ltform&gt tag.</p>
+<p> The element itself is a container for different types such as text fields, checkboxes, radio buttons, submit buttons and many more.</p>
+<p> the for attribute of the label tag is equal to the id attribute of the input tag and is used to bind the two</p>
+
+<form>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname"><br>
+<a href ="../index.html">Home</a>
+</body>
+</html>
