@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<meta charset="utg-8">
 <html>
 <head>
+<meta charset="utg-8">
 <title>Education Website</title>
 </head>
 <body>
+<header>
 <h1> Learning HTML </h1>
 <p> This web page will be used to educate a user on everything I have learned during the creation of this website </p>
+</header>
 <h2> HTML5 </h2>
 <p> HTML5 is the latest version of HTML. It is used to create web pages and applications. It is the starting point and most fundamental language to create a website.</p>
 
+<!--Trying to keep the similar nested structure when creating Syntax section-->
 <h3>Syntax</h3>
-<p>&lt!DOCTYPE html &gt This tag defines the document is html. All HTML Documents must start with this declaration</p>
-<p>&lt meta charset=&gt - This tag sets the meta character</p>
-<p>&lthtml&gt - this tag is the root element of an html page</p>
-<p>&lthead&gt - this tag contains meta information about the page like title scripts and style sheets
-    elements that can be used within &lthead&gt are:
+<p>&lt!DOCTYPE html&gt - This tag defines the document is html. All HTML Documents must start with this declaration</p>
+<p>&lthtml&gt - The root element of a HTML page, all elements are defined with the openeing and closing of this tag.</p>
+<ul>
+    <p>&lthead&gt - this tag contains meta information about the page like title scripts and style sheets
+    elements that can be used within &lthead&gt are: </p>
     <ul>
-    <li>&lttitle&gt</li>
-    <li>&ltbase&gt</li>
-    <li>&ltlink&gt - relationship between current document and external resource</li>
-    <li>&ltstyle&gt - used to define style information for a single page</li>
-    <li>&ltmeta&gt - specify character set, page description,keywords,author, and viewport settings</li>
-    <li>&ltscript&gt - define client side javascripts</li>
-    <li>&lttemplate&gt</li>
+        <li>&ltmeta&gt - Meta data such as specify character set, page description,keywords,author, and viewport settings</li>
+        <li>&lttitle&gt - specifies the title for the page, content is shown in the title bar</li>
+        <li>&ltbase&gt</li>
+        <li>&ltlink&gt - relationship between current document and external resource</li>
+        <li>&ltstyle&gt - used to define style information for a single page</li>
+        <li>&ltscript&gt - define client side javascripts</li>
+        <li>&lttemplate&gt</li>
     </ul>
-</p>
-<p>&lttitle&gt - This tag specifies the title for the page, content is shown in the title bar</p>
-<p>&ltbody&gt - This tag defines the document body. A container for all visible contents. What the browser displays </p>
-<p>&lth1&gt - This tag creates a large heading.</p>
+    <p>&lt/head&gt</p>
+
+<!-- Body Explanation and tags to use-->
+<p>&ltbody&gt - This tag defines the document body. A container for all visible contents. What the browser displays.
+    Tags that are used within the body are usually: </p>
 <ul>
-    <li> Headings are numbered h1-h6</li>
-    <li> Use only one &lth1&gt per page, h2 section titles, h3 sub sections</li>
-    <li> Browsers will add white space before and after a heading </li>
-    <li> Heading size can be specified with css inline style attribute: style="font-size:60px;"</li>
-</ul>
-<p>&ltp&gt - This tag creates a paragraph</p>
-<ul>
-    <li> A paragraph starts a new line, but the results of how it is displayed depends on the screen size</li>
-    <li> To separate content or create a thematic break use the &lthr&gt tag</li>
-    <p>Example</p>
-    <hr>
-    <li>the &ltpre&gt element is how you displayed fixed width text
-</ul>
+    <p>&ltp&gt - This tag creates a paragraph</p>
+    <ul>
+        <li> A paragraph starts a new line, but the results of how it is displayed depends on the screen size</li>
+        <li> To separate content or create a thematic break use the &lthr&gt tag</li>
+        <p>Example</p>
+        <hr>
+        <li>the &ltpre&gt element is how you displayed fixed width text
+    </ul>
+    <p>&lth1&gt - This tag creates a large heading.</p>
+        <ul>
+            <li> Headings are numbered h1-h6</li>
+            <li> Use only one &lth1&gt per page, h2 section titles, h3 sub sections</li>
+            <li> Browsers will add white space before and after a heading </li>
+            <li> Heading size can be specified with css inline style attribute: style="font-size:60px;"</li>
+        </ul>
 <P>&lta&gt - This tag creates a link. Attributes like href need to be used</p>
     <ul>
         <p> HTML Link Target Attributes target=""</p>
@@ -55,6 +61,11 @@
 <p>&ltimg&gt - this Tag is is how images are defined. Attributes like src, alt, width, height are used </p>
 <p>&ltbr&gt - This tag is used for a line break. Since it is an empty element it does not rquire a closing tag </p>
 <p>Comments can be written by writting text in between the follow syntax &lt!-- Text here --&gt</p>
+
+</ul>
+<p>&lt/body&gt</p>
+<p>&lt/html&gt</p>
+
 <h3>Attributes</h3>
 <h5>&ltimg src="" alt="" width="" height=""&gt</h5>
 <ul>
