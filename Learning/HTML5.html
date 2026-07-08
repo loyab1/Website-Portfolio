@@ -10,7 +10,16 @@
 <p> This web page will be used to educate a user on everything I have learned during the creation of this website </p>
 </header>
 <h2> HTML5 </h2>
-<p> HTML5 is the latest version of HTML. It is used to create web pages and applications. It is the starting point and most fundamental language to create a website.</p>
+<hr title="&lt;hr&gt;">
+<p> HTML5 is the latest version of HTML. It is used to create web pages and applications.
+    It is the starting point and most fundamental language to create a website.<br>
+    Below is the general outline containing the required elements to start building with some
+    essential attributes for each element. Some required others recommeneded. </p>
+
+<p> If there Something on the page that you are wondering how it has been created<br> Hover the mouse over it,
+    Text will be displayed with the Element used.</p>
+    
+
 
 <!--Trying to keep the similar nested structure when creating Syntax section-->
 <h3>Syntax</h3>
@@ -19,29 +28,36 @@
 <ul>
     <p>&lthead&gt - this tag contains meta information about the page like title scripts and style sheets
     elements that can be used within &lthead&gt are: </p>
+<!--Head Attributes-->
     <ul>
         <li>&ltmeta&gt - Meta data such as specify character set, page description,keywords,author, and viewport settings</li>
-        <li>&lttitle&gt - specifies the title for the page, content is shown in the title bar</li>
-        <li>&ltbase&gt</li>
+        <li>&lttitle&gt - specifies the title for the page, content is shown in the title bar, 
+            how its displayed in search engine results and when added to favorites</li>
         <li>&ltlink&gt - relationship between current document and external resource</li>
         <li>&ltstyle&gt - used to define style information for a single page</li>
         <li>&ltscript&gt - define client side javascripts</li>
-        <li>&lttemplate&gt</li>
     </ul>
+<!--Head Attrbutes-->
     <p>&lt/head&gt</p>
 
-<!-- Body Explanation and tags to use-->
-<p>&ltbody&gt - This tag defines the document body. A container for all visible contents. What the browser displays.
-    Tags that are used within the body are usually: </p>
-<ul>
-    <p>&ltp&gt - This tag creates a paragraph</p>
+    <!-- Body Explanation and tags to use-->
+    <p>&ltbody&gt - This element defines the document body. A container for all visible contents. What the browser displays.
+        Some elements that are used within the body are usually: </p>
     <ul>
-        <li> A paragraph starts a new line, but the results of how it is displayed depends on the screen size</li>
-        <li> To separate content or create a thematic break use the &lthr&gt tag</li>
-        <p>Example</p>
-        <hr>
-        <li>the &ltpre&gt element is how you displayed fixed width text
-    </ul>
+        <p>&ltp&gt - This tag creates a paragraph, it is the essential tag for displaying text on the screen.</p>
+        <ul>
+            <li> A paragraph starts a new line, but the results of how it is displayed depends on the screen size</li>
+            <li>the &ltpre&gt element is how you can display text exactly as it was written in the html file
+            <pre> 
+                A
+                AA
+                AAA
+                AAAA
+            </pre>
+            <li>The &ltbr&gt tag is used for a line break. Since it is an empty element it does not rquire a closing tag </p>
+            <li> To separate content or create a thematic break use the &lthr&gt tag</li>
+        </ul>
+    
     <p>&lth1&gt - This tag creates a large heading.</p>
         <ul>
             <li> Headings are numbered h1-h6</li>
@@ -49,24 +65,127 @@
             <li> Browsers will add white space before and after a heading </li>
             <li> Heading size can be specified with css inline style attribute: style="font-size:60px;"</li>
         </ul>
-<P>&lta&gt - This tag creates a link. Attributes like href need to be used</p>
-    <ul>
-        <p> HTML Link Target Attributes target=""</p>
-        <li>_self - Opens the document in the same tab it was clicked on </li>
-        <li>_blank - opens the document in a new window/tab</li>
-        <li>_parent - opens the document in the parent frame</li>
-        <li>_top - opens the document in the full body of the window.</li>
+    <p>&ltimg&gt - This tag is is how images are defined. Attributes like src, alt, width, height are used </p>
+    <P>&lta&gt - This tag creates a link. Attributes like href need to be used</p>
+        <ul>
+            <p> HTML Link Target Attributes target=""</p>
+            <li>_self - Opens the document in the same tab it was clicked on </li>
+            <li>_blank - opens the document in a new window/tab</li>
+            <li>_parent - opens the document in the parent frame</li>
+            <li>_top - opens the document in the full body of the window.</li>
+        </ul>
     </ul>
-<p> an Image can be used as a link, just include it within the &lta&gt tag
-<p>&ltimg&gt - this Tag is is how images are defined. Attributes like src, alt, width, height are used </p>
-<p>&ltbr&gt - This tag is used for a line break. Since it is an empty element it does not rquire a closing tag </p>
-<p>Comments can be written by writting text in between the follow syntax &lt!-- Text here --&gt</p>
 
+
+    
+    
 </ul>
 <p>&lt/body&gt</p>
 <p>&lt/html&gt</p>
 
+<h3>Elements</h3>
+<p>Listed are some common elements to be used when creating your HTML Document.</p>
+<p>The root element of your HTML Document starts with &lthtml&gt and ends with &lt/html&gt</p>
+
+<table style="border:1px solid grey;" class="Elements">
+    <colgroup>
+        <col style="width: 100px;">
+        <col style="width: 100px;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="text-align: left;">Function</th>
+            <th style="text-align: left;">Element</th>
+            <th style="text-align: left;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltp&gt</td>
+            <td>Element that represents a paragraph, displayed as text.</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltol&gt</td>
+            <td>Element to create an ordered list</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltul&gt</td>
+            <td>Element to create an unordered list</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltli&gt</td>
+            <td>An item with in a list used in conjuction with &ltol&gt or &ltul&gt</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltdl&gt</td>
+            <td>Element to create a description list</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltdt&gt</td>
+            <td>Represents a term in description list</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltdd&gt</td>
+            <td>data provided for the data term &ltdt&gt</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&lthr&gt</td>
+            <td>Used to create a thematic break</td>
+        </tr>
+        <tr>
+            <td>Text Elements</td>
+            <td>&ltpre&gt</td>
+            <td>Preformatted text represented by what was written in HTML</td>
+        </tr>
+    </tbody>
+</table>
+<!--Section for describing Attributes-->
 <h3>Attributes</h3>
+<table style="border:1px solid grey;">
+    <!-- used to space the width of the left column -->
+    <colgroup>
+        <col style="width:100px;" class="Attributes">
+        <col class="AttrElements">
+        <col class="Description">
+    </colgroup>
+    <tbody>
+    <tr>
+        <th style="text-align: left;">Attributes</th>
+        <th style="text-align: left;">Elements </th>
+        <th style="text-align: left;">Description</th>
+    
+    </tr>
+    <tr>
+        <td>src</td>
+        <td>&ltimg&gt,&ltscript&gt,&ltvideo&gt,&ltinput&gt</td>
+        <td>URL of content.</td>
+    </tr>
+    <tr>
+        <td>href</td>
+        <td>&lta&gt,&ltlink&gt</td>
+        <td>URL of a linked resource.</td>
+    </tr>
+    <tr>
+        <td>form</td>
+        <td>&ltbutton&gt,&ltinput&gt,&lttextarea&gt,&ltselect&gt</td>
+        <td>Form that is the owner of the element</td>
+    </tr>
+    <tr>
+        <td>bgcolor</td>
+        <td>&ltbody&gt,&ltcol&gt,&lttable&gt,&ltcolgroup&gt</td>
+        <td>Element Background color</td>
+
+
+</tbody>
+</table>
 <h5>&ltimg src="" alt="" width="" height=""&gt</h5>
 <ul>
     <li>src - Absolute URL of an image such as a link or Relative URL such as the path to the image in the directory</li> 
@@ -80,6 +199,7 @@
     <li> <p title="This attribute can be used for many tags"> title - value displayed when mouse govering over the defined tag </li>
 </ul>
 
+<!--Removing Section, more so for CSS Learning
 <h5>styling attributes</h5>
 <dl>
     <dt>background-color:</dt>
@@ -94,7 +214,38 @@
     <dt>text-align</dt>
     <dd>- define the alignment of the text</dd>
 </dl>
+-->
 
+<!--Section for Describing Global Attributes -->
+<h3> Global Attributes </h3>
+<p> Global attributes are common among all and can be used on all the HTML elements. Listed are some Common Attributes.</p>
+<!-- Global Attributes table-->
+<table style="border:1px solid grey;">
+    <!-- used to space the width of the left column -->
+    <colgroup>
+        <col style="width:100px;" class="Attributes">
+        <col class="Description">
+    </colgroup>
+    <tbody>
+    <tr>
+        <th style="text-align: left;">Attributes</th>
+        <th style="text-align: left;">Description</th>
+    </tr>
+    <tr>
+        <td>class</td>
+        <td>Specifies a class name for an element, typically refering to a class in style sheet, reusable on multiple elements.</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>Gives a unique id for an element,to only be used with 1 element.</td>
+    </tr>
+    <tr>
+        <td>style</td>
+        <td>Used to create an inline CSS style for an element</td>
+
+
+</tbody>
+</table>
 <h5>Text Formatting</h5>
 <ul>
     <li>&ltblockquote&gt</li> <p> This is an example <blockquote> This is a block quote test, a block qoute defines a section that is qouted from another source </blockquote></p>
