@@ -88,9 +88,10 @@
 <p>Listed are some common elements to be used when creating your HTML Document.</p>
 <p>The root element of your HTML Document starts with &lthtml&gt and ends with &lt/html&gt</p>
 
-<table style="border:1px solid grey;" class="Elements">
+<h4>Text Elements</h4>
+<table style="border:1px solid grey;" class="TElements">
     <colgroup>
-        <col style="width: 100px;">
+        <col style="width: 110px;">
         <col style="width: 100px;">
     </colgroup>
     <thead>
@@ -158,6 +159,161 @@
         </tr>
     </tbody>
 </table>
+
+<h4>Text Semantics</h4>
+<table style="border: 1px solid grey" class="TSemantics">
+    <colgroup>
+        <col style="width: 110px;">
+        <col style="width: 100px;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="text-align: left;">Function</th>
+            <th style="text-align: left;">Element</th>
+            <th style="text-align: left;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;a&gt;</td>
+            <td>Used to create a hyper link to web pages, files, locations within the page, or anything a URL can use.</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;br&gt;</td>
+            <td>Creates a line break in text, where division of lines is useful.</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;cite&gt;</td>
+            <td>used for citing creative work.</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;mark&gt;</td>
+            <td>Represents text that is highlighted.</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;q&gt;</td>
+            <td>Short Inline quote that dont require paragraph breaks.</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;s&gt;</td>
+            <td>Strikethrough text</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;small&gt;</td>
+            <td>Side comments and small print. </td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;strong&gt;</td>
+            <td>Text that indicates it has strong importance</td>
+        </tr>
+        <tr>
+            <td>Text Semantics</td>
+            <td>&lt;abbr&gt;</td>
+            <td>Used to define an abbreviation - <abbr title="Hypertext Markup Language">HTML</abbr></td>
+        </tr>
+         <tr>
+            <td>Text Semantics</td>
+            <td>&lt;address&gt;</td>
+            <td>Used to define & display contact information</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<h4>Sectioning Content</h4>
+<table style="border: 1px solid grey;" class="SectionContent">
+    <colgroup>
+        <col style="width: 130px;">
+        <col style="width: 100px;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="text-align: left;">Function</th>
+            <th style="text-align: left;">Element</th>
+            <th style="text-align: left;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Root</td>
+            <td>&lt;body&gt;</td>
+            <td>Where content for the HTML document will be placed.</td>
+        </tr>        
+        <tr>
+            <td>Content Sectioning</td>
+            <td>&lt;header&gt;</td>
+            <td>May contain heading elements used for introductory content.</td>
+        </tr>
+        <tr>
+            <td>Content Sectioning</td>
+            <td>&lt;footer&gt;</td>
+            <td>End of page used for information about the section,copyright, or to link related documents.</td>
+        </tr>
+        <tr>
+            <td>Content Sectioning</td>
+            <td>&lt;nav&gt;</td>
+            <td>Used to signify a section of the page that is for providing navigation links.</td>
+        </tr>
+        <tr>
+            <td>Content Sectioning</td>
+            <td>&lt;&gt;</td>
+            <td></td>
+        </tr>
+    </tbody>
+    
+</table>
+<h4>Media & Embedded Content Elements</h4>
+<table style="border: 1px solid grey" Class="ContentElements">
+    <colgroup>
+        <col style="width: 110px;">
+        <col style="width: 100px;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="text-align: left;">Function</th>
+            <th style="text-align: left;">Element</th>
+            <th style="text-align: left;">Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Media Elements</td>
+        <td>&lt;img&gt;</td>
+        <td>Embed an image into the document</td>
+    </tr>
+    <tr>
+        <td>Media Elements</td>
+        <td>&lt;area&gt;</td>
+        <td>Defines an area inside an image that has clickable locations</td>
+    </tr>
+    <tr>
+        <td>Media Elements</td>
+        <td>&lt;audio&gt;</td>
+        <td>Embed sound into the document.</td>
+    </tr>
+    <tr>
+        <td>Media Elements</td>
+        <td>&lt;video&gt;</td>
+        <td>Embed video playback into the document</td>
+    </tr>
+    <tr>
+        <td>Embedded Content</td>
+        <td>&lt;iframe&gt;</td>
+        <td>Used to display a nested page within the current one</td>
+    </tr>
+
+</tbody>
+</table>
+
+
 <!--Section for describing Attributes-->
 <h3>Attributes</h3>
 <table style="border:1px solid grey;">
@@ -197,6 +353,8 @@
 
 </tbody>
 </table>
+
+
 
 <!-- img element info 
 <h5>&ltimg src="" alt="" width="" height=""&gt</h5>
@@ -260,20 +418,6 @@
 
 </tbody>
 </table>
-<h5>Text Formatting</h5>
-<ul>
-    <li>&ltblockquote&gt</li> <p> This is an example <blockquote> This is a block quote test, a block qoute defines a section that is qouted from another source </blockquote></p>
-    <li>&ltq&gt</li><p> A short quote <q> is used to insert quotation marks around the q tag.</q></p>
-    <li>&ltabbr&gt</li><p> The abbrevation tag defines an abbreviation <abbr title="Yo Mama So Fat">YMSF</abbr></p>
-    <li>&ltaddress&gt - defines the contact information for the author/owner</li>
-    <address>
-    Written by Lylite<br>
-    Visit us at: Example.com<br>
-    </address>
-    <li>&ltcite&gt - used to cite a persons work </li>
-    <li>&ltbdo&gt - used to overwrite current text direction</li>
-</ul>
-
 
 <h5>HTML Tables</h5>
 <p> A table can be defined using the &lttable&gt tag.<br></p>
