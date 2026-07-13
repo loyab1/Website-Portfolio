@@ -10,5 +10,53 @@
             <h1>Learning Linux</h1>
             <hr>
         </header>
+
+        <h2> Commands </h2>
+        <ul>
+            <li> $ - calls a variable that is created. 
+            <li> env - list all of the environment variables created.</li>
+            <li> export - Set a variable for the current shell session. <strong>Programs and scrips can also use this variable</strong></li>
+            <li> unset - remove an environment variable from the current shell session.
+            <li> head - display first few lines of text in a file. Default is 10 lines, can use the flag -n to specify</li>
+            <li> tail - display last few lines of text in a file. Default is 10 lines, can use the flag -n to specify</li>
+            <li> touch - Creates a file if it does not exist or updates access and modification time stamps </li>
+            <li> mv - Can rename a file or moves a file or directory from one location to another. </li>
+            <li> rm - removes a directory. the flag -r delets a directory and all its contents. </li>
+            <li> cp - Copy a file from one source to another. the -R flag copies all content</li>
+            <li> grep - Used to search for text in files. The -r flag can be used to search recursively through a directory</li>
+            <li> find - tool used for finding files and directories by name. Uses -name flag </li>
+            <li> wc - word count command to count the number of lines words and bytes in a file. 
+        </ul>
+
+        <h3> Flags </h3>
+        <p> Options that can be passed to a command to change how it behaves. </p>
+        <ul>
+            <li> --help - use this flag after a command to print helpful information</li>
+        </ul>
+
+
+        <h2> Writing Scripts </h2>
+        <p> A script itself is a program. There are two types of programs compiled and interperted. A compiled program
+            does not require a separate interperter to run like python, java, etc. It is pure machine code instruction.
+        </p>
+
+        <p> Shebang - a special line at the top of the script that tells the shell which program to use to execute the file.
+            for example: <strong>#! /usr/bin/env bash</strong> will use the bash program to interpert the script. 
+        </p>
+
+        <p> Multiple commands can be run on a single line by separating with a ; <br>
+            If you only want the second command to run when the first succeeds use &&
+
+        </p>
+        
+        <h3> Command Tips</h3>
+        <p> touch can be useful when creating scripts because it will check if the file exist without changing any
+            or creates a new file if necessary 
+        </p>
+
+        <p> The PATH variable is a list of directories that the shell will look into when running a command. 
+            To add a directory to the PATH without overwriting, make sure to use the export command and reference the existing variable.
+        </p>
+        <p> Example: export PATH="$PATH:/new/directory"
     </body>
 </html>
