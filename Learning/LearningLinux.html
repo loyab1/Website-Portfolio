@@ -10,8 +10,38 @@
             <h1>Learning Linux</h1>
             <hr>
         </header>
+        <h2> Permissions </h2>
+        <p> Linux systems support multiple users each with their own home directory, files, and permissions.</p>
+        <p> Permissions control what a user can do with the system its files and its directories. Permissions are represented
+            by a 10 character string. <strong>Example: drwxrwxrwx</strong>
+        </p>
+        <ul>
+            <li> the first character represents whether its a file or directory</li>
+            <ul>
+                <li> <strong>-</strong>  Regular File</li>
+                <li> <strong>d</strong> Directory</li>
+            </ul>
+            <li> The next 3 sets of characters <strong>rwx</strong> represents permissions for the owner, group, and others </li>
+            <ul>
+                <li>rwx: all permissions</li>
+                <li>rw-: Read and write but not execute</li>
+                <li>r-x: Read and execute but not write.</li>
+            </ul>
+            <li> The owner is whoever created the file or directory</li>
+            <li> The group is the group the file or directoy and user is assigned to</li>
+            <li> Other is considered everyone else</li>
+        </ul>
 
-        <h2> Commands </h2>
+        <p> The <strong> chmod </strong> is how you change the permissions of a file or directory. it takes in 3 arguements
+            u= (user), g= (group),  and o= (other).
+            <br>
+            <strong> Example: chmod -R u=rwx,g=,o= DIRECTORY</strong>
+        </p>
+
+        <p> The <strong>chown</strong> is a command that allows you to change the owner of a file or directory</p>
+
+        <h2> Shell</h2>
+        <h3> Commands </h3>
         <ul>
             <li> $ - calls a variable that is created. 
             <li> env - list all of the environment variables created.</li>
@@ -25,17 +55,24 @@
             <li> cp - Copy a file from one source to another. the -R flag copies all content</li>
             <li> grep - Used to search for text in files. The -r flag can be used to search recursively through a directory</li>
             <li> find - tool used for finding files and directories by name. Uses -name flag </li>
-            <li> wc - word count command to count the number of lines words and bytes in a file. 
+            <li> wc - word count command to count the number of lines words and bytes in a file.</li>
+            <li> ln - create a link. to create a symbolic link use -s flag. target_path then link_path</li>
+            <li> top - view what resources are being used by system programs. Press o while running to sort</li>
+            <li> ps aux - list processes running on the machine</li>
+            <li> whoami - prints user currently logged in </li>
         </ul>
 
-        <h3> Flags </h3>
+        <h4> Flags </h4>
         <p> Options that can be passed to a command to change how it behaves. </p>
         <ul>
             <li> --help - use this flag after a command to print helpful information</li>
+            <li> > "filename.extension" - redirect stdout to a file</li>
+            <li> 2> "filename.extension" - redirect stderr to a file</li>
+            <li> &lt; "filename.extension" - Redirects a file into a programs stdin </li>
         </ul>
 
 
-        <h2> Writing Scripts </h2>
+        <h3> Writing Scripts </h3>
         <p> A script itself is a program. There are two types of programs compiled and interperted. A compiled program
             does not require a separate interperter to run like python, java, etc. It is pure machine code instruction.
         </p>
@@ -48,8 +85,15 @@
             If you only want the second command to run when the first succeeds use &&
 
         </p>
-        
-        <h3> Command Tips</h3>
+        <p> If a script does not want to run, make sure it has an executable permission. <strong>chmod +x</strong></p>
+
+        <h4> Concepts </h4>
+        <ul>
+            <li> Piping </li>
+            <p> Piping is taking the output (stdout) of one program and inputting (stdin) it into another program. Operator is |</p>
+            <li>stdin, stdout, stderr</li>
+        </ul>
+        <h4> Command Tips</h4>
         <p> touch can be useful when creating scripts because it will check if the file exist without changing any
             or creates a new file if necessary 
         </p>
@@ -58,5 +102,26 @@
             To add a directory to the PATH without overwriting, make sure to use the export command and reference the existing variable.
         </p>
         <p> Example: export PATH="$PATH:/new/directory"
+
+        <h4>Creating your Own Shell Experience</h4>
+        <p> Bash and Zsh have configuration files that run each time a new session is started.
+            They can be used to setup aliases, functions, and environment variables.
+            These files are hidden inside the home directory. 
+            Bash file is .bashrc while Zsh is .zshrc if the files arent there you can create them. 
+        </p>
+
+        <h4> Reading the Manual </h4>
+        <p> to access the manual you will use <strong> man </strong> command. The command will work
+            for many of the built in commands. 
+            <ul>
+                <li>to search the manual you will press the <strong>/</strong> key</li>
+                <ul>
+                    <li> to jump to the next result press <strong>n</strong> key</li>
+                    <li> to go back press <strong>N</strong> key</li>
+                </ul>
+                <li> to page through the manual press <strong> space bar </strong>
+                <li> to quit the manual press <strong> q </strong>
+            </ul>
+        </p>
     </body>
 </html>
